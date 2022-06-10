@@ -149,3 +149,13 @@ main > header {
     color: red;
     content: "❌";
 }
+
+#sign-up input:invalid.visited:not(:placeholder-shown) + span::after{
+    position: absolute;
+    left: calc(-1 * var(--input-width) - 10px);
+    top: 20px;
+
+    color: red;
+    
+    content: attr(data-error);
+}
