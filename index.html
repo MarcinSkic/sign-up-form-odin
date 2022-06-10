@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>SignUp</title>
+
+    <script src="js/validation.js" defer></script>
+    <title>SignUp</title> 
 </head>
 <body>
     <aside>
@@ -22,6 +24,47 @@
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</h1>
             <p>You <em>know</em> you want to.</p>
         </header>
+        <form id="sign-up" action="#" method="get">
+            <h2>Let's do this!</h2>
+            <div class="should-be-grid">
+                <label for="first-name">
+                    <div>FIRST NAME*</div>
+                    <input type="text" id="first-name" name="first-name" placeholder=" " required>
+                    <span></span>
+                </label>
+                <label for="last-name">
+                    <div>LAST NAME*</div>
+                    <input type="text" id="last-name" name="last-name" placeholder=" " required>
+                    <span></span>
+                </label>
+                <label for="email">
+                    <div>EMAIL*</div>
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <span></span>
+                </label>
+                <label for="phone">
+                    <div>PHONE NUMBER</div>
+                    <input type="tel" id="phone" name="phone" placeholder=" ">
+                    <span></span>
+                </label>
+                <label for="password">
+                    <div>PASSWORD*</div>
+                    <input type="password" id="password" name="password" placeholder=" " required>
+                    <span></span>
+                </label>
+                <label for="conf-password">
+                    <div>CONFIRM PASSWORD*</div>
+                    <input type="password" id="conf-password" placeholder=" " required>
+                    <span></span>
+                </label>
+            </div>
+        </form>
+
+        <button type="submit" form="sign-up">Create Account</button>
+
+        <footer>
+            Already have an account? <a href="">Log in</a>
+        </footer>
     </main>
 </body>
 </html>
