@@ -85,6 +85,8 @@ main > header {
 #sign-up {
     background-color: white;
     padding: 30px 50px;
+
+    box-shadow: 0px 4px 20px -16px;
 }
 
 #sign-up h2 {
@@ -158,4 +160,36 @@ main > header {
     color: red;
     
     content: attr(data-error);
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #596D48;
+
+    font-weight: 700;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 15px 40px;
+    margin: 30px 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: #506142;
+}
+
+button[type="submit"]:active {
+    background-color: #7a8b69;
+}
+
+main > footer{
+    margin: 0 30px;
+}
+
+main > footer a {
+    color: #506142;
+    font-weight: 700;
+
+    text-decoration: none;
 }
